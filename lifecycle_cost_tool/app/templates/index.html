@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Contracts</title>
+</head>
+<body>
+    <h1>Uploaded Contracts</h1>
+    <table border="1">
+        <tr>
+            <th>Year</th>
+            <th>Obligation Amount</th>
+            <th>Description</th>
+        </tr>
+        {% for contract in contracts %}
+        <tr>
+            <td>{{ contract.year }}</td>
+            <td>{{ contract.obligation_amount }}</td>
+            <td>{{ contract.description }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
